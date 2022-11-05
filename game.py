@@ -39,16 +39,21 @@ def check_game_status(count):
 
 def find_solution(game_board, x, y):
     game_board.move(x, y)
+
+    # base case
     if len(game_board.visit) == game_board.cell:
         return True
-    if len(game_board.possible_move) == 0:
-        return False
-
-    for move in game_board.possible_move:
-        x_next, y_next = move
-        if find_solution(game_board, x_next, y_next):
-            return True
-        game_board.visit.remove(move)
+    
+    # recursive case
+    else:
+        for move in game_board.possible_move:
+            x_next, y_next = move
+            if find_solution(game_board, x_next, y_next):
+                return True
+            else:
+                # once moved, visit record it, so need to delete
+                game_board.visit.remove(move)
+    
     return False
 
 
