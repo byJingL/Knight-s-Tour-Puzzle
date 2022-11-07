@@ -15,7 +15,7 @@ The knight is a chess piece. It moves in an L-shape and can jump over other piec
 - Download [game.py](/game.py), [board.py](/board.py) and [excption.py](/exceptions.py)
 - Run [game.py](/game.py)
 
-## Play Sample
+## Examples
 Player will be asked three questions to set the size of puzzle, the starting position and play or check solution.
 ### Check Solution
 ```
@@ -51,3 +51,5 @@ Enter your next move: > 3 2
     1  2  3  4 
 Enter your next move: > 
 ```
+## Disclaimer
+The original learning materials and project ideas are from [JetBrains Academy](https://www.jetbrains.com/academy/). All codes were written by myself.
